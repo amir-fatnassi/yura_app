@@ -1,0 +1,43 @@
+@import './base.css';
+.content {
+    width: 90%;
+}
+.scann {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+}
+.scann label {
+    margin: 20px;
+}
+.scann input {
+  margin: 20 10;
+  width: 70%;
+  height: 80%;
+}
+.loss_typ {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px auto;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.checkbox label {
+    margin: 10%;
+}
+.checkbox input {
+    width: 30px;
+    height: 30px;
+}
+.scann select {
+  margin: 20 10;
+  width: 70%;
+  height: 80%;
+}
