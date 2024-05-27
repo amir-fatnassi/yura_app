@@ -6,6 +6,7 @@
   --ev-c-black: #1b1b1f;
   --ev-c-black-soft: #222222;
   --ev-c-black-mute: #282828;
+  --ev-c-black-mut: #fffbfb;
 
   --ev-c-gray-1: #515c67;
   --ev-c-gray-2: #414853;
@@ -24,6 +25,7 @@
 }
 
 :root {
+  /* --color-background: var(--ev-c-black-mut); */
   --color-background: var(--ev-c-black);
   --color-background-soft: var(--ev-c-black-soft);
   --color-background-mute: var(--ev-c-black-mute);
