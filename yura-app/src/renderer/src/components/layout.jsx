@@ -3,22 +3,23 @@ import { Outlet } from "react-router-dom"
 import Login from "../pages/Login"
 
 function Layout() {
-  const [loded, setLoded] = useState(true)
+  const [loded, setLoded] = useState(false)
 
   return (
     <div className="g_contain">
       {loded ? 
         <Login/>:
-        <div>
-          <h2>HOME PAGE</h2>
-          <ul>
-            <li>
-              <a href="/home">home</a>
-            </li>
-            <li>
-              <a href="/new">new</a>
-            </li>
-          </ul>
+        <div className="main_page">
+          <div className="main_page_container">
+            <ul>
+              <li>
+                <a href="/home">home</a>
+              </li>
+              <li>
+                <a href="/new">new</a>
+              </li>
+            </ul>
+          </div>
           <Outlet/>
         </div>
       }   

@@ -13,7 +13,10 @@ function App() {
   }
   return (
       <div className='content'>
-        <div className='scann'>
+        <div className='first_zone'>
+          <div className='user_inf'>user</div>
+          <div className='formu'>
+          <div className='scann'>
           <label htmlFor="machine" >BARCODE</label>
           <input type="text" onChange={handleBarCode} />        
         </div>
@@ -39,7 +42,37 @@ function App() {
             <option value="WIRE_3">WIRE 3</option>
             <option value="WIRE_4">WIRE 4</option>
           </select>       
-        </div> 
+        </div>
+          </div>
+        </div>
+        <div className='second_zone'>second</div>
+        {/* <div className='scann'>
+          <label htmlFor="machine" >BARCODE</label>
+          <input type="text" onChange={handleBarCode} />        
+        </div>
+        <div className='loss_typ'>
+          <div className='checkbox'>
+            <label htmlFor="machine">MACHINE</label>
+            <input type="checkbox" name="machine" id="" onChange={handleBarCode}/>    
+          </div>
+          <div className='checkbox'>
+            <label htmlFor="sample">SAMPLE</label>
+            <input type="checkbox" name="sample" id="" onChange={handleBarCode} />
+          </div>
+          <div className='checkbox'>
+            <label htmlFor="maintenance">MAINTENANCE</label>
+            <input type="checkbox" name="maintenance" id="" onChange={handleBarCode}/>
+          </div>
+        </div>
+        <div className='scann'>
+          <label htmlFor="maintenance">WIRE LENGTH</label>
+          <select name="cars" id="length" onChange={handleLength}>
+            <option value="WIRE_1">WIRE 1</option>
+            <option value="WIRE_2">WIRE 2</option>
+            <option value="WIRE_3">WIRE 3</option>
+            <option value="WIRE_4">WIRE 4</option>
+          </select>       
+        </div>  */}
     </div>
   )
 }
