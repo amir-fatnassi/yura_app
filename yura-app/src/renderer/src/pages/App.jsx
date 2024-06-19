@@ -1,5 +1,6 @@
 // import Versions from './components/Versions'
 import '../assets/App.css'
+import UserCad from '../components/UserCad'
 
 function App() {
   // const ipcHandle = () => window.electron.ipcRenderer.send('ping')
@@ -14,7 +15,9 @@ function App() {
   return (
       <div className='content'>
         <div className='first_zone'>
-          <div className='user_inf'>user</div>
+          <div className='user_inf'>
+            <UserCad/>
+          </div>
           <div className='formu'>
           <div className='scann'>
           <label htmlFor="machine" >BARCODE</label>
