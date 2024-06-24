@@ -7,8 +7,8 @@ function Layout() {
 
   return (
     <div className="g_contain">
-      {loded ? 
-        <Login/>:
+      {!loded ? 
+        <Login loded={loded} setLoded={setLoded}/>:
         <div className="main_page">
           <div className="main_page_container">
             <ul>
@@ -20,7 +20,7 @@ function Layout() {
               </li>
             </ul>
           </div>
-          <Outlet/>
+          <Outlet />
         </div>
       }   
     </div>
